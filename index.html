@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<ul>
+    {% for election in site.elecciones %}
+    <li>{{ election.title }}
+        - {{ election.eleccion }} - <a href="{{ site.baseurl}}{{election.url}}">Ver más</a>
+    </li>
+    {% endfor %}
+</ul>

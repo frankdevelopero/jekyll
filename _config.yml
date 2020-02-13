@@ -1,0 +1,25 @@
+
+title: Frank Lopez
+email: frankdevelopero@gmail.com
+description: >-
+  Proyecto Jekyll desarrollado para postular como desarrollador backend a Fundación Ciudadanía Inteligente.
+baseurl: "/jekyll"
+url: "https://frankdevelopero.github.io/jekyll"
+twitter_username: frankdevelopero
+github_username:  frankdevelopero
+
+theme: minima
+plugins:
+  - jekyll-feed
+
+collections:
+  elecciones:
+    output: true
+    permalink: /eleccion/:name
+
+defaults:
+  - scope:
+      path: ""
+      type: "elecciones"
+    values:
+      layout: index
